@@ -1,9 +1,11 @@
+
+window.addEventListener("DOMContentLoaded",()=>{
 const cvx = document.createElement('canvas');
 document.body.appendChild(cvx);
 const ctx = cvx.getContext("2d");
 cvx.height = innerHeight;
 cvx.width = innerWidth;
-
+alert('I am ready');
 
 class Quadrilateral{
    constructor(x,y,width,height,color){
@@ -22,3 +24,5 @@ class Quadrilateral{
             ctx.restore();
             }
 }
+
+});
